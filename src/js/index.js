@@ -12,11 +12,17 @@ let playMusic = () => {
     play.classList.add(hidden)
     pause.classList.remove(hidden)
     audio.play()
+    // img.classList.add('animate-spin-slow')
+    img.classList.remove('paused')
+    img.classList.add('running')
+    // img.style.animationPlayState('running!important')
   } else {
     play.classList.remove(hidden)
     pause.classList.add(hidden)
-    img.classList.add('animate-none')
     audio.pause()
+    img.classList.remove('running')
+    img.classList.add('paused')
+    // img.style.animationPlayState('paused!important')
   }
   
 }

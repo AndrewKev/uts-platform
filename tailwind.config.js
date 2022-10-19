@@ -4,8 +4,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'spin-slow': 'spin 10s linear infinite',
-        'pause': 'animation-play-state: paused;'
+        'spin-slow': 'spin 10s linear infinite'
       }
     },
   },
