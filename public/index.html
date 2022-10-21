@@ -10,22 +10,23 @@
   <title>Music Player</title>
 </head>
 
-<body>
+<body class="bg-[#F9F9F9]">
   <!-- <aside class="w-64" aria-label="Sidebar"> -->
-  <aside class="w-40 h-screen fixed" aria-label="Sidebar">
-    <div class="py-4 px-3 h-full bg-gray-50 rounded">
+  <aside class="w-40 h-screen fixed border-r shadow-md" aria-label="Sidebar">
+    <div class="py-6 px-3 h-full bg-gray-50 rounded">
       <div class="flex flex-col items-center">
-        <img class="w-32 h-32 rounded-full shadow" src="./img/skate.jpg" alt="">
+        <img class="w-32 h-32 mt-8 rounded-full shadow" src="./img/skate.jpg" alt="">
         <p class="text-center font-bold">Andreas Kevin Maheswara</p>
         <p class="text-center text-gray-500">205314027</p>
       </div>
-      <p>Menu</p>
+
+      <p class="font-medium mt-4 mb-2">Menu</p>
       <ul class="space-y-2">
         <li>
           <a href="#"
-            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100 ">
+            class="flex items-center p-2 text-base font-normal text-white rounded-lg hover:bg-blue-700 bg-blue-700 ">
             <svg aria-hidden="true"
-              class="w-6 h-6 text-gray-500 transition duration-75  group-hover:text-gray-900"
+              class="w-6 h-6 text-white hover:text-black transition duration-75  group-hover:text-gray-900"
               fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
               <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
@@ -44,8 +45,7 @@
               </path>
             </svg>
             <span class="flex-1 ml-3 whitespace-nowrap">Trending</span>
-            <span
-              class="inline-flex justify-center items-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full">Pro</span>
+          
           </a>
         </li>
         <li>
@@ -62,8 +62,6 @@
               </path>
             </svg>
             <span class="flex-1 ml-3 whitespace-nowrap">Playlist</span>
-            <span
-              class="inline-flex justify-center items-center p-3 ml-3 w-3 h-3 text-sm font-medium text-blue-600 bg-blue-200 rounded-full">3</span>
           </a>
         </li>
         <li>
@@ -72,15 +70,16 @@
             <svg aria-hidden="true"
               class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 "
               fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
-              </path>
+              <path fill-rule="evenodd"
+                d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"
+                clip-rule="evenodd"></path>
             </svg>
             <span class="flex-1 ml-3 whitespace-nowrap">Bookmark</span>
           </a>
         </li>
       </ul>
 
-      <p>Collections</p>
+      <p class="font-medium mt-4 mb-2">Collections</p>
       <ul class="space-y-2">
         <li>
           <a href="#"
@@ -105,31 +104,18 @@
                 d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
                 clip-rule="evenodd"></path>
             </svg>
-            <span class="flex-1 ml-3 whitespace-nowrap">Sign In</span>
-          </a>
-        </li>
-        <li>
-          <a href="#"
-            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-100 ">
-            <svg aria-hidden="true"
-              class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 "
-              fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd"
-                d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <span class="flex-1 ml-3 whitespace-nowrap">Sign Up</span>
+            <span class="flex-1 ml-3 whitespace-nowrap">Sign Out</span>
           </a>
         </li>
       </ul>
     </div>
   </aside>
 
-  <div class="ml-48 mr-6 py-6 md:grid md:grid-cols-2 md:justify-items-end gap-8">
-    <div>
+  <div class="ml-48 mr-6 py-6 lg:grid lg:grid-cols-2 lg:justify-items-end gap-8">
+    <div class="">
       <div class="flex items-center justify-between pt-6">
         <h1 class="font-bold text-2xl">Discover</h1>
-        <div class="relative md:hidden">
+        <div class="relative lg:hidden">
           <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
             <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
           </div>
@@ -139,7 +125,7 @@
   
       <div class="mt-4">
         <h1 class="font-bold text-lg">Terakhir Diputar</h1>
-        <div class="grid grid-cols-2 xl:grid-cols-3 gap-4 w-fit">
+        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-4 w-fit">
           <div>
             <img class="rounded-xl" src="https://i.ytimg.com/vi/mBZdHuZCfic/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAOuPKfLJ_KmlOQIVgRwR2PXQ8Lmw" alt="">
             <p class="font-bold">Roses</p>
@@ -262,7 +248,9 @@
 
     </div>
 
-    <div class="hidden md:block xl:w-4/5 pt-6">
+    <!-- <div class="md:col-span-5"></div> -->
+
+    <div class="hidden lg:block xl:w-4/5 pt-6 ">
       <div class="relative">
         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
           <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
@@ -307,16 +295,40 @@
       <div class="mt-4">
         <h1 class="font-semibold text-lg">Top Artis</h1>
         <div>
-          <div class="border shadow-md rounded-xl px-5 py-2 flex items-center w-[371px]">
+          <div class="mb-2 border shadow-md rounded-xl px-5 py-2 flex items-center w-[371px]">
             <img class="w-16 h-16 rounded-full" src="../public/img/artis.jpg" alt="">
             <div class="w-1/2 ml-4">
               <h5 class="font-semibold">Artis 1</h5>
               <p class="text-sm text-gray-500">Amerika</p>
             </div>
-            <!-- <div class="flex"> -->
-              <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2 focus:outline-none">Following</button>
-            <!-- </div> -->
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2 focus:outline-none">Follow</button>
           </div>
+
+          <div class="border shadow-md rounded-xl px-5 py-2 flex items-center w-[371px]">
+            <img class="w-16 h-16 rounded-full" src="../public/img/artis.jpg" alt="">
+            <div class="w-1/2 ml-4">
+              <h5 class="font-semibold">Artis 2</h5>
+              <p class="text-sm text-gray-500">Amerika</p>
+            </div>
+            <button type="button" class="py-2 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200">Following</button>
+          </div>
+
+          <div class="mb-2 border shadow-md rounded-xl px-5 py-2 flex items-center w-[371px]">
+            <img class="w-16 h-16 rounded-full" src="../public/img/artis.jpg" alt="">
+            <div class="w-1/2 ml-4">
+              <h5 class="font-semibold">Artis 3</h5>
+              <p class="text-sm text-gray-500">Amerika</p>
+            </div>
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2 focus:outline-none">Follow</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <h1 class="font-semibold text-lg">Top Song</h1>
+        <div>
+          <img src="https://i.ytimg.com/vi/lzkKzZmRZk8/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCAmsaOa6S3Iu06JIoTV8nr3DI1cw" alt="">
+          
         </div>
       </div>
     </div>
